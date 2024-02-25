@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Contact from "./Contact";
 
-export default function NavBarSection() {
+export default function NavBar() {
   const TOP_OFFSET = 50;
   const [isScroll, setIsScroll] = useState(false);
   
@@ -34,7 +34,7 @@ export default function NavBarSection() {
             src="/assets/images/logo.svg" alt="logo"
           />
         </div>
-        <div className="flex flex-row space-x-8">
+        <div className="md:flex hidden flex-row space-x-8 ">
           {MENUS
             .map(menu => (
               <Link
@@ -50,7 +50,7 @@ export default function NavBarSection() {
             ))}
         </div>
         <Contact />
-        <div className="text-white rounded-sm border py-4 px-6">
+        <div className="md:flex hidden text-white rounded-sm border py-4 px-6">
           <p>{`Let's connect`}</p>
         </div>
       </div>

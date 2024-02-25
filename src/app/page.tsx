@@ -1,13 +1,14 @@
-import CoverSection from "@/components/CoverSection";
-import NavBarSection from "@/components/NavbarSection";
-import SkillsSection from "@/components/SkillsSection";
+import Cover from "@/components/Cover";
+import NavBar from "@/components/Navbar";
+import Skills from "@/components/Skills";
+
 
 export default function Home() {
   return (
-    <main className="h-full">
-      <NavBarSection />
-      <CoverSection />
-      <SkillsSection />
+    <main className="h-full relative">
+      <NavBar />
+      <Cover />
+      <Skills />
     </main>
   );
 }
