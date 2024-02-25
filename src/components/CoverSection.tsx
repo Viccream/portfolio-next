@@ -6,9 +6,9 @@ import React from "react";
 export default function CoverSection() {
   return (
     <section>
-      <div className="bg-[url('/assets/images/banner-bg.png')] bg-cover h-screen w-full z-0">
+      <div className="bg-[url('/assets/images/banner-bg.png')] bg-cover w-full z-0">
         <div className="flex flex-row pt-56">
-          <div className="flex-1 m-8">
+          <div className="flex-1 p-10">
             <div className=" text-white text-center border rounded-sm w-1/3 p-2 bg-gradient-to-r from-[#aa367c80] to-[#4a2fbd80]">
               Welcome to my portfolio
             </div>
@@ -22,9 +22,9 @@ export default function CoverSection() {
               <ArrowCircleRightOutlined className="text-white" />
             </div>
           </div>
-          <div className="flex-1 p-8">
+          <div className="flex justify-center">
             <img
-            className="p-4 h-[80%]"
+            className="h-[80%]"
               src="/assets/images/header-img.svg" />
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function NavBarSection() {
   }, []);
 
   return (
-    <nav className={`w-full fixed bg-12 p-8 z-100 ${isScroll ? "bg-[#121212]" : "bg-transparent"}`}>
+    <nav className={`w-full fixed bg-12 px-10 py-8 z-100 ${isScroll ? "bg-[#121212]" : "bg-transparent"}`}>
       <div className="flex items-center space-x-8">
         <div className="flex-auto">
           <img
