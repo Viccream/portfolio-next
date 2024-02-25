@@ -1,12 +1,33 @@
 /* eslint-disable @next/next/no-img-element */
+'use client';
 import { MENUS } from "@/constants/menu";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Contact from "./Contact";
 
 export default function NavBarSection() {
+  const TOP_OFFSET = 50;
+  const [isScroll, setIsScroll] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      if (window.scrollY >= TOP_OFFSET) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="w-full bg-12 p-6 bg-[#121212]">
+    <nav className={`w-full fixed bg-12 p-8 z-100 ${isScroll ? "bg-[#121212]" : "bg-transparent"}`}>
       <div className="flex items-center space-x-8">
         <div className="flex-auto">
           <img
