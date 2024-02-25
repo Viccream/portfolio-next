@@ -28,7 +28,8 @@ html {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
   background: linear-gradient(
       to bottom,
       transparent,

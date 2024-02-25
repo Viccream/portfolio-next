@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "navbar",
         "cover",
-        "skill"
+        "skill",
+        "footer"
     ]
 }

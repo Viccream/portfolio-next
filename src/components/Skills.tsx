@@ -10,7 +10,7 @@ export default function Skills() {
 					<div className='flex flex-wrap justify-center space-x-4 py-6'>
 						{SKILLS.map(skill =>
 							<div key={skill.label} className='my-2 p-2 border rounded-xl hover:bg-black bg-[#151515]'>
-								<p className='text-white text-sm'>{skill.label}</p>
+								<p className='text-sm'>{skill.label}</p>
 							</div>
 						)}
 					</div>

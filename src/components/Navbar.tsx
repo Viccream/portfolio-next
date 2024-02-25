@@ -50,7 +50,7 @@ export default function NavBar() {
             ))}
         </div>
         <Contact />
-        <div className="md:flex hidden text-white rounded-sm border py-4 px-6">
+        <div className="md:flex hidden rounded-sm border py-4 px-6">
           <p>{`Let's connect`}</p>
         </div>
       </div>
