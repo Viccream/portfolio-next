@@ -5,7 +5,6 @@ import { ArrowCircleRightOutlined } from "@mui/icons-material";
 import { notification } from "antd";
 import React from "react";
 
-
 export default function Cover() {
   const [api, contextHolder] = notification.useNotification();
 
@@ -14,7 +13,7 @@ export default function Cover() {
       message: 'Coming Soon',
       description:
         'Hey, I am cooking it up...',
-      duration: 1,
+      duration: 0,
     });
   };
 
@@ -22,29 +21,29 @@ export default function Cover() {
     <>
     {contextHolder}
       <section>
-        <div className="bg-[url('/assets/images/banner-bg.png')] bg-cover w-full z-0">
-          <div className="flex flex-row pt-36 md:pt-56">
-            <div className="flex-1 p-10">
-              <div className="w-2/3 md:w-1/3 text-[9px] md:text-base text-center border rounded-sm p-2 bg-gradient-to-r from-[#aa367c80] to-[#4a2fbd80]">
+        <div className="bg-[url('/assets/images/banner.jpg')] bg-cover w-full">
+          <div className="flex flex-row pt-24 pb-12 lg:pb-16">
+            <div className="flex flex-col flex-1 px-10 justify-center">
+              <div className="w-full md:w-1/3 text-[9px] md:text-base text-center border rounded-sm p-2 bg-[#4a2fbd80]">
                 Welcome to my portfolio
               </div>
-              <div className="py-6">
-                <h1 className="text-2xl md:text-5xl">{`Hi! I'm Cream`}</h1>
-                <h1 className="text-2xl md:text-5xl">Software Developer</h1>
+              <div className="py-3">
+                <h1 className="text-lg md:text-4xl font-bold">{`Hi! I'm Cream`}</h1>
+                <h1 className="text-lg md:text-4xl font-bold">Software Developer</h1>
                 <p className="text-[9px] md:text-base py-2">🌱 Transitioning from Environment Officer to Software Developer has ignited my passion for perpetual growth in coding. Now specializing in crafting websites and mobile apps. 💻 </p>
               </div>
               <div
-                className="flex flex-row space-x-5"
+                className="flex flex-row space-x-5 items-center"
                 onClick={showNotification}
               >
                 <p className="text-[9px] md:text-base">{`Let's connect`}</p>
                 <ArrowCircleRightOutlined className="w-3 md:w-6" />
               </div>
             </div>
-            <div className="flex flex-1 justify-center">
+            <div className="flex flex-1 justify-center items-center md:p-10">
               <img
-                className="h-[80%]"
-                src="/assets/images/header-img.svg" />
+                className="md:w-[80%] w-[75%] rounded-full"
+                src="/assets/images/avatar.jpg" />
             </div>
           </div>
         </div>
