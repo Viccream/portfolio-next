@@ -26,8 +26,9 @@ export default function Projects() {
 						>
 							{PROJECTS.map(project =>
 								<SwiperSlide key={project.label}>
-									<div className='bg-white flex flex-row justify-center space-x-5 items-center h-48'>
+									<div className='bg-white flex flex-col justify-center items-center h-48'>
 										<p className='text-black'>{project.label}</p>
+										<p className='text-black'>{project.desc}</p>
 									</div>
 								</SwiperSlide>)}
 						</Swiper>

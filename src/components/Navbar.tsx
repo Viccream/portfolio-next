@@ -8,7 +8,7 @@ import Contact from "./Contact";
 export default function NavBar() {
   const TOP_OFFSET = 50;
   const [isScroll, setIsScroll] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       console.log(window.scrollY);
@@ -42,7 +42,7 @@ export default function NavBar() {
                 className={`cursor-pointer`}
                 target={menu.newTab ? '_blank' : ''}
                 key={menu.label}
-                >
+              >
                 <p className=" text-[#808080] hover:text-white">
                   {menu.label}
                 </p>
@@ -50,9 +50,15 @@ export default function NavBar() {
             ))}
         </div>
         <Contact />
-        <div className="md:flex hidden rounded-sm border py-4 px-6">
-          <p>{`Let's connect`}</p>
-        </div>
+        <Link
+          href="/assets/file/arisara_resume.pdf"
+          className={`cursor-pointer`}
+          download="resume"
+        >
+          <div className="md:flex hidden rounded-sm border py-4 px-6 cursor-pointer">
+            <p>{`Download Resume`}</p>
+          </div>
+        </Link>
       </div>
     </nav>
   )

@@ -2,6 +2,7 @@
 import { CONTACTS } from '@/constants/contact'
 import Link from 'next/link'
 import React from 'react'
+import { notification } from 'antd';
 
 export default function Contact() {
 	return (
@@ -14,7 +15,7 @@ export default function Contact() {
 						target={menu.newTab ? '_blank' : ''}
 						key={menu.label}
 					>
-						<div className='border rounded-full p-3 bg-[#d9d9d91a]'>
+						<div className='border rounded-full p-3 bg-[#d9d9d91a] hover:bg-transparent'>
 							<img
 								src={menu.image} alt={menu.label}
 							/>
