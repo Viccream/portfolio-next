@@ -10,7 +10,7 @@ export default function Contact() {
 				.map(menu => (
 					<Link
 						href={menu.link}
-						className={`cursor-pointer`}
+						className={"cursor-pointer"}
 						target={menu.newTab ? '_blank' : ''}
 						key={menu.label}
 					>

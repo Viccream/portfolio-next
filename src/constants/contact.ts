@@ -1,6 +1,6 @@
 export const CONTACTS = [
 	{
-		label: 'linkin',
+		label: "linkin",
 		link: 'https://www.linkedin.com/in/arisara-vic',
 		newTab: true,
 		image: '/assets/images/nav-icon1.svg',

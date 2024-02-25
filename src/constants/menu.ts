@@ -1,6 +1,6 @@
 export const MENUS = [
 	{
-		label: 'Home',
+		label: "Home",
 		link: '/',
 		newTab: false,
 	},

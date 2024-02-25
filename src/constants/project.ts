@@ -1,6 +1,6 @@
 export const PROJECTS = [
 	{
-		label: 'mini-game',
+		label: "mini-game",
 		desc: 'coming soon',
 		image: 'http://placekitten.com/g/200/300',
 	},
