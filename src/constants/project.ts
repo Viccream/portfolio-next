@@ -19,4 +19,9 @@ export const PROJECTS = [
 		desc: 'coming soon',
 		image: 'http://placekitten.com/g/200/300',
 	},
+	{
+		label: 'app',
+		desc: 'coming soon',
+		image: 'http://placekitten.com/g/200/300',
+	},
 ];
