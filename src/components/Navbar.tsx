@@ -3,8 +3,8 @@
 import { MENUS } from "@/constants/menu";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Contact from "./Contact";
 import Logo from "./Logo";
+import Contact from "./Contant";
 
 export default function NavBar() {
   const TOP_OFFSET = 50;

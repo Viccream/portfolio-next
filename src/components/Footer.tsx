@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
-import Contact from './Contact'
 import Logo from './Logo'
+import Contact from './Contant'
 
 export default function Footer() {
   return (
