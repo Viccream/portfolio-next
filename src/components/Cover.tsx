@@ -22,7 +22,7 @@ export default function Cover() {
               <ArrowCircleRightOutlined className="w-3 md:w-6" />
             </div>
           </div>
-          <div className="flex-1 justify-center">
+          <div className="flex flex-1 justify-center">
             <img
             className="h-[80%]"
               src="/assets/images/header-img.svg" />

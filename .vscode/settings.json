@@ -3,6 +3,7 @@
         "navbar",
         "cover",
         "skill",
-        "footer"
+        "footer",
+        "project"
     ]
 }
