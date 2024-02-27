@@ -12,9 +12,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { PROJECTS } from '@/constants/project';
 
-export default function Projects() {
-	return (
-		<section id="projects">
+
+export default function Project() {
+  return (
+    <section id="projects">
 			<div className='p-10 bg-black'>
 				<div className='m-auto w-full text-center'>
 					<h2 className='text-4xl font-bold'>Projects</h2>
@@ -36,5 +37,5 @@ export default function Projects() {
 				</div>
 			</div>
 		</section>
-	)
+  )
 }

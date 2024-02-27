@@ -2,8 +2,8 @@ import { SKILLS } from '@/constants/skill'
 import React from 'react'
 
 export default function Skills() {
-	return (
-		<section id="skills">
+  return (
+    <section id="skills">
 			<div className='p-10 bg-black'>
 				<div className='m-auto w-full bg-[#151515] rounded-lg p-12 text-center'>
 					<h2 className='text-white text-4xl font-bold'>Skills</h2>
@@ -17,5 +17,5 @@ export default function Skills() {
 				</div>
 			</div>
 		</section>
-	)
+  )
 }
