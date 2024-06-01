@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-'use client';
+"use client";
 import { MENUS } from "@/constants/menu";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -25,25 +25,24 @@ export default function NavBar() {
   }, []);
 
   return (
-    <nav className={`w-full fixed bg-12 px-10 py-4 z-100 ${isScroll ? "bg-[#121212]" : "bg-transparent"}`}>
+    <nav
+      className={`w-full fixed bg-12 px-10 py-4 z-100 ${isScroll ? "bg-[#121212]" : "bg-transparent"}`}
+    >
       <div className="flex items-center space-x-8">
         <div className="flex-auto">
           <Logo />
         </div>
         <div className="lg:flex hidden flex-row space-x-8 ">
-          {MENUS
-            .map(menu => (
-              <Link
-                href={menu.link}
-                className={`cursor-pointer`}
-                target={menu.newTab ? '_blank' : ''}
-                key={menu.label}
-              >
-                <p className=" text-[#faf5ff] hover:text-white">
-                  {menu.label}
-                </p>
-              </Link>
-            ))}
+          {MENUS.map((menu) => (
+            <Link
+              href={menu.link}
+              className={`cursor-pointer`}
+              target={menu.newTab ? "_blank" : ""}
+              key={menu.label}
+            >
+              <p className=" text-[#faf5ff] hover:text-white">{menu.label}</p>
+            </Link>
+          ))}
         </div>
         <Contact />
         <Link
@@ -57,5 +56,5 @@ export default function NavBar() {
         </Link>
       </div>
     </nav>
-  )
+  );
 }

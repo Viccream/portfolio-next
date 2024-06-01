@@ -1,11 +1,11 @@
 {
-    "conventionalCommits.scopes": [
-        "navbar",
-        "cover",
-        "skill",
-        "footer",
-        "project"
-    ],
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true
+  "conventionalCommits.scopes": [
+    "navbar",
+    "cover",
+    "skill",
+    "footer",
+    "project"
+  ],
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true
 }

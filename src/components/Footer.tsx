@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react'
-import Logo from './Logo'
-import Contact from './Contant'
+import React from "react";
+import Logo from "./Logo";
+import Contact from "./Contant";
 
 export default function Footer() {
   return (
@@ -14,7 +14,9 @@ export default function Footer() {
           <Contact />
         </div>
       </div>
-      <div className={`bg-[url('/assets/images/banner.jpg')] w-full h-16`}></div>
+      <div
+        className={`bg-[url('/assets/images/banner.jpg')] w-full h-16`}
+      ></div>
     </section>
-  )
+  );
 }
