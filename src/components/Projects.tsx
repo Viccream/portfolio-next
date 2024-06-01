@@ -19,7 +19,7 @@ export default function Project() {
 			<div className='p-10 bg-black'>
 				<div className='m-auto w-full text-center'>
 					<h2 className='text-4xl font-bold'>Projects</h2>
-					<p className='p-6'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
+					<p className='p-6'>test Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
 					<div className='pt-4'>
 						<Swiper
 							spaceBetween={50}
